@@ -1,8 +1,23 @@
 aid: foxtrot
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/foxtrot.png
 name: Foxtrot
-description: 'Foxtrot is a company surfaced as a portfolio company of d1-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: retail. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Foxtrot (Foxtrot Market, foxtrotco.com) is a Chicago-based retail chain of upscale
+  convenience stores and cafes combining a neighborhood corner store with a coffee shop and a curated
+  selection of local and specialty food, drink, and grocery goods, plus on-demand delivery and pickup.
+  Surfaced as a portfolio company of d1-capital and added to the API Evangelist network. At the time of
+  enrichment the public site (foxtrotco.com) is a minimal placeholder and the company exposes no public
+  developer program, API documentation, SDKs, or machine-readable specifications.'
 url: https://raw.githubusercontent.com/api-evangelist/foxtrot/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Retail
+- Convenience Store
+- Cafe
+- Grocery
+- Food and Beverage
+- Ecommerce
+- Chicago
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/foxtrot-domain-security.yml
 - type: Website
-  url: https://www.foxtrotco.com
+  url: https://foxtrotco.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
